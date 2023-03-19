@@ -1,0 +1,33 @@
+@import '../variables';
+
+.course-block {
+  width: 480px;
+  text-align: justify;
+  margin-bottom: 65px;
+  display: flex;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 6px;
+
+  &:not(:nth-of-type(4n)) {
+    margin-right: 35px;
+  }
+
+  &__image {
+    max-width: 480px;
+   
+
+    height: 210px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1%;
+    margin-bottom: 10px;
+  }
+
+
+}
