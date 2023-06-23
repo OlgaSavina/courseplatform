@@ -4,43 +4,96 @@
 
 @import 'components/all';
 
-body {
-  
-  padding: 50px 0;
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
 
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+
+
+.header {
+  //display: flex;
+  justify-content: center; 
+  color:  #1D212F;
+  font-size: 34px;
+  font-weight: 600;
+  padding: 10px 0px 10px 0px; 
+  letter-spacing: 0.169px;
+  align-items: center;
+  
+  
+}
 
 .content {
-
+  background-color: #1D212F;
+  
+  
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin: 10px 40px 40px 0px; 
+    color: #FFF;
+   
+  }
 
   &__items {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+   
   }
 
-  &__top {
-    margin: 30px 0px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+ 
   
  
 }
 .coursepage{
+  background-color: #1D212F;
+  
   &__title {
+    color: #FFF;
     text-align: center;
     font-size: 30px;
     letter-spacing: 1%;
-    margin-bottom: 10px;
+    padding: 10px 0px 10px 0px;
   }
   &__body {
     display: flex;
     justify-content: center; 
-    height: 350px;
+    align-items: stretch; 
+    //height: 350px;
    margin: 30px 0px 0px 0px;
   }
   &__video {
@@ -52,23 +105,30 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0px 30px 0px 0px;
-    justify-content: space-between;
+    margin: 0px 10px 10px 10px;
+    color: #F58634;
+    text-align: left;
+   // justify-content: space-between;
    
     
   }
   li {
     color: #737373;
-    font-weight: 600;
+    font-weight: 500;
     line-height: calc(24/14*100%);
-    text-align: center;
+    text-align: left;
     margin: 0px 0px 20px 0px;
+    text-decoration :underline;
+    
+  }
+  a:active {
+    color: #FFF;
     
   }
 }
 .container {
-  width: $container-width;
-  margin: 0 auto;
+ // width: $container-width;
+  margin: 0 0;
 
 }
 

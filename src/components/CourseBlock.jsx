@@ -31,15 +31,14 @@ description,
   return (
     <div className="course-block">
       <Link to={`/${id}`}>
-      <div>
-        
+    
 
          <h5 className="course-block__title"> {title}</h5>   
-         <h5>Кількість уроків: {lessonsCount}</h5>
-         <h5>Опис: {description}</h5>
-         <h5>Навички: {meta.skills + ' '}</h5>
-         <h5>Рейтинг: {rating}</h5>
-         </div>
+         <div className="course-block__text">Кількість уроків: {lessonsCount}</div>
+         <h5 className="course-block__text">Опис: {description}</h5>
+      
+         <h5 className="course-block__text">Рейтинг: {rating}</h5>
+         
         {isHovered ? <VideoJS options={{
     autoplay: true,
     controls: true,

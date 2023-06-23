@@ -31,12 +31,24 @@ function Home() {
 
 
       return (
-      
+        <div >
+        
       <div className="container">
-     
+      <div className="header">
+        Сourse platform
+      
+
+       </div>
         <div className="content">
-           <div className="content__top">
-          <h2>All Courses</h2>
+          { /*<div className="content__title">
+           Сourse platform
+         
+
+      </div>*/}
+          <hr ></hr>
+     
+          <div className="content__pagination">
+          {<Pagination count={Math.ceil(courses.length/10)} page={currentPage} onChange={paginate} variant="text"  sx={{button:{color: '#ffffff', fontSize:'30px'}}} />}
           </div>
           <div className="content__items">
         
@@ -49,12 +61,10 @@ function Home() {
           />
           ))}
           </div>
-          <div>
-          {<Pagination count={Math.ceil(courses.length/10)} page={currentPage} onChange={paginate} />}
+          
           </div>
           </div>
           </div>
-     
     );
   }
   

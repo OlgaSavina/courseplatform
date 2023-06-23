@@ -4,30 +4,38 @@
   width: 480px;
   text-align: justify;
   margin-bottom: 65px;
-  display: flex;
+ 
+  
   background-color: #f3f3f3;
   border-radius: 10px;
-  flex-direction: column;
-  padding: 6px;
+ margin: 0px 40px 40px 0px; 
+ 
+  padding: 16px;
 
-  &:not(:nth-of-type(4n)) {
-    margin-right: 35px;
-  }
+ // &:not(:nth-of-type(4n)) {
+ //   margin-right: 35px;
+ // }
 
   &__image {
-    max-width: 480px;
-   
-
-    height: 210px;
+   max-width: 450px;
+  height: 210px;
   }
 
   &__title {
+    color: #F58634;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 900;
     letter-spacing: 1%;
     margin-bottom: 10px;
   }
+  &__text {
+    text-align: left;
+    font-size: 16px;
+    
+    
+  }
+
 
 
 }
